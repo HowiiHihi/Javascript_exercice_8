@@ -2,11 +2,17 @@
 function verifMajorite()
 {
   var age = Number(document.getElementById('age').value);
-  if (age > 17.9)
+  if ((age >= 18) && (age <=106))//condition pour afficher le message qui permet d'entrer
   {
-    alert("Tu peux entrer")
+    alert("Tu peux entrer");
   }
-  else {
-    alert("Reviens quand tu auras 18 ans")
+  else
+  {
+    if (age < 0)//permet d'afficher un message spécifique si l'utilisateur donne un âge inférieur à 0
+    {
+      alert("Petit rigolo");
+    }
+    else
+    alert("Vous n'avez pas l'âge requis");//réponse par défaut
   }
 }

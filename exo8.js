@@ -4,7 +4,7 @@ function verifMajorite()
   var age = Number(document.getElementById('age').value);
   if ((age >= 18) && (age <=106))//condition pour afficher le message qui permet d'entrer
   {
-    alert("Tu peux entrer");
+    alert("Vous pouvez entrer");
   }
   else
   {
